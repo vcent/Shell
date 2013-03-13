@@ -32,7 +32,7 @@ start)
 stop)
         echo "stop LVS"
         /sbin/ifconfig eth0:0 down
-        /sbin/route del -host $vip dev eth0:0
+        /sbin/route del -host $VIP dev eth0:0
         /sbin/ipvsadm -C
         ;;
 *)
